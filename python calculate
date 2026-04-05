@@ -1,0 +1,29 @@
+def add(a, b):
+    return a + b
+def subtract(a, b):
+    return a - b
+def mul(a, b):
+    return a * b
+def divide(a, b):
+    if b ==0:
+        return 'Cant solve'
+    return a /b
+print('''
+Chose one:
+1. Add
+2. Subtract
+3. Multiply
+4. Divide''')
+choose = input('Your selection: ')
+a = float(input('a = '))
+b = float(input('b = '))
+if choose == '1':
+    print(add(a, b))
+elif choose == '2':
+    print(subtract(a, b))
+elif choose == '3':
+    print(mul(a, b))
+elif choose == '4':
+    print(divide(a, b))
+else:
+    print('Error')
